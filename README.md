@@ -19,6 +19,6 @@ solution1 ← {⍵~⍵/⍨~≠⍵}
 ````
 The solution is not $O(n)$.
 ````APL
-solution2 ← 2⊥≠/2⊥⍣¯1⊢e
+solution2 ← {2⊥≠/2⊥⍣¯1⊢⍵}
 ````
 This solution uses xor to filter the binary representation of every number.
